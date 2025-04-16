@@ -16,6 +16,8 @@ startButton.addEventListener('click', () => {
   game.restart();
   updateUI();
   startButton.textContent = 'Restart';
+  startButton.classList.remove('start');
+  startButton.classList.add('restart');
   msgStart.classList.add('hidden');
   msgWin.classList.add('hidden');
   msgLose.classList.add('hidden');
